@@ -75,16 +75,29 @@
     <p class="lead">Remplissez le formulaire ci-dessous. Nous confirmons votre éligibilité et vous expliquons exactement comment ça fonctionne.</p>
     <span class="badge"><i></i>Sans engagement</span>
   </div>
-  <form id="eligibility" novalidate>
-    <div class="field"><label for="name">Nom complet</label><input type="text" id="name" name="name" autocomplete="name" required></div>
-    <div class="field"><label for="company">Nom de l'entreprise</label><input type="text" id="company" name="company" autocomplete="organization" required></div>
-    <div class="field"><label for="email">E-mail</label><input type="email" id="email" name="email" autocomplete="email" required></div>
-    <div class="field"><label for="phone">Téléphone</label><input type="tel" id="phone" name="phone" autocomplete="tel"><span class="hint">Numéro de mobile. Nous ne vous enverrons de SMS que si vous cochez la case ci-dessous.</span></div>
-    <label class="consent"><input type="checkbox" id="sms" name="sms"><span>En cochant cette case, j'accepte de recevoir des SMS de SMG Agency au numéro indiqué concernant ma demande : confirmation de réception, planification de mon appel d'éligibilité, rappels de rendez-vous et support client. La fréquence des messages varie. Des frais peuvent s'appliquer selon votre opérateur. Répondez STOP pour vous désinscrire, AIDE pour obtenir de l'aide. Cette case est facultative et le consentement n'est pas une condition d'achat. Aucune donnée mobile ne sera partagée avec des tiers à des fins marketing. Voir notre <a href="#">Politique de confidentialité</a> et nos <a href="#">Conditions d'utilisation</a>.</span></label>
-    <button class="btn primary" type="submit" id="submit">Confirmer mon appel d'éligibilité ↗</button>
-    <p class="fine">En envoyant ce formulaire, vous acceptez d'être contacté par SMG Agency par e-mail ou téléphone au sujet de votre appel d'éligibilité, ainsi que nos <a href="#">Conditions</a> et notre <a href="#">Politique de confidentialité</a>. Jamais de spam.</p>
-    <div class="ok" id="ok" hidden><strong>Demande reçue.</strong><span>Nous vous recontactons sous 24 h pour confirmer votre appel d'éligibilité.</span></div>
-  </form>
+  <div class="ghl">
+<iframe
+    src="https://api.leadconnectorhq.com/widget/form/1s8yrlGq2SkJFUePRo4S"
+    style="width:100%;height:100%;border:none;border-radius:3px"
+    id="inline-1s8yrlGq2SkJFUePRo4S"
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Formulaire contact site"
+    data-height="431"
+    data-layout-iframe-id="inline-1s8yrlGq2SkJFUePRo4S"
+    data-form-id="1s8yrlGq2SkJFUePRo4S"
+    data-cookie-consent="true"
+    data-cookie-consent-provider="auto"
+    title="Formulaire contact site"
+        >
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+</div>
 </div></section>
 
 <footer><div class="wrap">
@@ -99,16 +112,6 @@
   <div class="copy"><span>© 2026 SMG Agency. Tous droits réservés.</span><span><a href="#">Politique de confidentialité</a><a href="#">Conditions</a></span></div>
 </div></footer>
 
-<script>
-document.getElementById('eligibility').addEventListener('submit',function(e){
-  e.preventDefault();
-  var req=['name','company','email'],bad=false;
-  req.forEach(function(id){var el=document.getElementById(id);var v=el.value.trim();var ok=v&&(id!=='email'||/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v));el.style.borderColor=ok?'':'#E5533D';if(!ok)bad=true;});
-  if(bad)return;
-  document.getElementById('submit').hidden=true;
-  document.getElementById('ok').hidden=false;
-});
-</script>
 
 </body>
 </html>
