@@ -113,6 +113,7 @@ footer{padding-block:3.5rem 2rem}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
 /* testimonials page */
+.video iframe{background:#000}
 .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 @media(max-width:900px){.vgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.vgrid{grid-template-columns:1fr}}
@@ -121,7 +122,8 @@ footer{padding-block:3.5rem 2rem}
 .cta{background:var(--bg2);text-align:center}
 .cta .wrap{display:grid;gap:1.2rem;justify-items:center;max-width:40rem}
 .back{display:inline-block;margin-top:1rem;font-size:.9rem;color:var(--muted)}
-.case h1{font-size:clamp(1.6rem,3.6vw,2.6rem);max-width:40rem}
-.case .wrap{justify-items:start}
-.feature{position:relative;width:100%;max-width:880px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.case h1{font-size:clamp(1.35rem,3.6vw,2.6rem);max-width:40rem}
+.case .wrap{justify-items:start;gap:1.2rem}
+.hero.case{padding-block:clamp(1.5rem,5vw,6rem)}
+.feature{position:relative;width:100%;max-width:880px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;color-scheme:dark}
 .feature iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
