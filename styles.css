@@ -131,3 +131,30 @@ footer{padding-block:3.5rem 2rem}
 .ghl iframe{min-height:460px}
 .legal{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
 .legal+.copy{margin-top:.8rem;padding-top:0;border-top:0}
+
+/* faq */
+.faq{display:grid;gap:0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;padding:1.1rem 0;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--muted);padding-bottom:1.2rem;max-width:44rem}
+/* about */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.about-text{display:grid;gap:1rem;max-width:40rem}
+.about-text p{color:var(--muted)}
+.facts{margin:0;display:grid;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.facts div{display:grid;gap:.15rem;padding:.9rem 1.2rem;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.facts dd{margin:0;font-size:.95rem}
+/* testimonial cards */
+.tcard{margin:0;display:grid;gap:.6rem;min-width:0}
+.tcard figcaption{display:grid;gap:.15rem}
+.tcard figcaption strong{font-size:.95rem}
+.tcard figcaption span{font-size:.82rem;color:var(--muted)}
+/* legal pages */
+.legal-page{max-width:46rem;display:grid;gap:1rem}
+.legal-page h2{font-size:1.4rem;margin-top:1.5rem}
+.legal-page p,.legal-page li{color:var(--muted)}
